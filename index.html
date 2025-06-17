@@ -22,8 +22,8 @@
         </div>
         <div class="nav-links">
           <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#team">Our Team</a>
+          <a href="about.html">About</a>
+          <a href="ourteam.html">Our Team</a>
           <a href="#services">Services</a>
           <a href="#contact">Contact</a>
         </div>
@@ -80,7 +80,7 @@
 
     <!-- Services Section -->
     <section class="services" id="services">
-      <h2>Our Services</h2>
+      <h2>Our Top Services</h2>
       <div class="services-grid">
         <div class="service-card">
           <i class="fas fa-passport"></i>
@@ -110,20 +110,11 @@
           <h3>U Visa</h3>
           <p>Support for crime victims assisting law enforcement</p>
         </div>
-        <div class="service-card">
-          <h3>Employment-based green card</h3>
-          <p>Support for crime victims assisting law enforcement</p>
-        </div>
-        <div class="service-card">
-          <h3>Removal of Conditions</h3>
-          <p>Support for crime victims assisting law enforcement</p>
-        </div>
-        <div class="service-card">
-          <h3>Family-based green card</h3>
-          <p>Support for crime victims assisting law enforcement</p>
-        </div>
+
         <div class="service-card cete">
-          <h3>More...</h3>
+          <i class="fas fa-ellipsis-h"></i>
+          <h3>More Services</h3>
+          <p>Explore our additional immigration legal services</p>
         </div>
       </div>
     </section>
@@ -134,19 +125,38 @@
         <div class="about-text">
           <h2>About Our Firm</h2>
           <p>
-            The Law Office of Maria Colon LLC is committed to providing the
-            highest quality and efficient legal services. We are a bilingual
-            (Spanish/English) law office whose objective is to help immigrants
-            solve their legal needs in the U.S.
+            The Law Office of Maria Colon LLC is a premier bilingual
+            (English/Spanish) immigration law firm dedicated to providing
+            exceptional legal representation and personalized service to clients
+            navigating the U.S. immigration system. Our commitment to excellence
+            and client success drives everything we do.
           </p>
           <p>
-            Our firm focuses on results, and we would be happy to talk to you
-            about your case.
+            Under the leadership of Maria Colon, our firm specializes in
+            comprehensive immigration solutions. With extensive experience
+            before USCIS, immigration courts nationwide, and the Board of
+            Immigration Appeals, we handle complex cases including family-based
+            immigration, naturalization, adjustment of status, nonimmigrant
+            visas, consular processing, and removal defense.
           </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">14+</span>
+              <span class="stat-label">Years of Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">1000+</span>
+              <span class="stat-label">Cases Handled</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">98%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+          </div>
         </div>
         <div class="about-image">
           <img
-            src="attorney-image.jpg"
+            src="https://static.wixstatic.com/media/f0595c_50621ace2eb548118ae52aebe11926c5~mv2.jpg/v1/crop/x_0,y_116,w_1320,h_1324/fill/w_329,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0404.jpg"
             alt="Maria Colon - Immigration Attorney"
           />
         </div>
@@ -155,28 +165,53 @@
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-      <h2>Contact Us</h2>
-      <div class="contact-container">
-        <div class="contact-info">
-          <div class="info-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>1301 York Rd. Suite 800<br />Lutherville, MD 21093</p>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-phone"></i>
-            <p>(336) 493-0500</p>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-envelope"></i>
-            <p>admin@mariacolonlaw.com</p>
-          </div>
-        </div>
+      <div class="contact-header">
+        <h2>Get in Touch</h2>
+        <p>
+          Schedule a consultation or reach out to us for any questions about
+          your immigration case
+        </p>
+      </div>
+
+      <div class="contact-form-container">
         <form class="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <input type="tel" placeholder="Your Phone" />
-          <textarea placeholder="Your Message" required></textarea>
-          <button type="submit" class="submit-btn">Send Message</button>
+          <div class="form-header">
+            <h3>Send Us a Message</h3>
+            <p>
+              Fill out the form below and we'll get back to you as soon as
+              possible
+            </p>
+          </div>
+          <div class="form-group">
+            <input type="text" id="name" required />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" required />
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" />
+            <label for="phone">Your Phone</label>
+          </div>
+          <div class="form-group">
+            <select id="service" required>
+              <option value="" disabled selected>Select Service</option>
+              <option value="citizenship">Citizenship & Naturalization</option>
+              <option value="family">Family Petitions</option>
+              <option value="asylum">Asylum</option>
+              <option value="visa">U Visa</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="message" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="submit-btn">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
         </form>
       </div>
     </section>
@@ -185,23 +220,81 @@
     <footer>
       <div class="footer-content">
         <div class="footer-info">
-          <h3>Law Office of Maria Colon LLC</h3>
+          <img
+            src="https://static.wixstatic.com/media/2df6c0_f09528ceeba746f2894ac19cf4c25979~mv2.jpeg/v1/crop/x_120,y_108,w_1302,h_834/fill/w_217,h_139,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Maria%20Colon%20Immigration%20Law.jpeg"
+            alt="Maria Colon Immigration Law Logo"
+            class="footer-logo"
+          />
           <p>Providing expert immigration legal services since 2010</p>
+          <div class="footer-social">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.facebook.com/abogadamariacolon"
+              class="social-link"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://x.com/AbogadaColon"
+              class="social-link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/abogadamariacolon/"
+              class="social-link"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.tiktok.com/@abogadamariacolon"
+              class="social-link"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+          </div>
         </div>
         <div class="footer-links">
+          <h4>Quick Links</h4>
           <a href="#home">Home</a>
-          <a href="#about">About</a>
+          <a href="about.html">About</a>
           <a href="#services">Services</a>
           <a href="#contact">Contact</a>
         </div>
-        <div class="footer-social">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>1301 York Rd. Suite 800<br />Lutherville, MD 21093</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>(336) 493-0500</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>admin@mariacolonlaw.com</p>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to our newsletter for immigration updates and news</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2024 Law Office of Maria Colon LLC. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Disclaimer</a>
+        </div>
       </div>
     </footer>
   </body>
